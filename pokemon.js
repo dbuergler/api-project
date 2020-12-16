@@ -25,7 +25,7 @@ function fetchPokemon(e) {
 
 function displayPokemon (pokemon) {
     $("#picture").attr("src", pokemon.sprites.front_default);
-    pokemon.forEach(p => {
+    pokemon.forEach (p => {
         let pokemonAbilities = document.createElement('li')
         pokemonAbilities.innerText = p.abiliies.ability.name;
         pokemonList.appendChild(pokemonAbilities);
